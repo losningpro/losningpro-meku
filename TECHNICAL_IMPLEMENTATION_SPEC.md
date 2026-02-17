@@ -327,15 +327,15 @@ CREATE TABLE staging.marketplace (...);
 **Environment Variables**
 ```bash
 # .env.production
-VITE_SUPABASE_URL=https://prod.supabase.co
-VITE_SUPABASE_ANON_KEY=<set-in-env>=prod_key
-STRIPE_SECRET_KEY=<set-in-env>=sk_live_xxx
+VITE_SUPABASE_URL=<set-in-env>
+VITE_SUPABASE_ANON_KEY=<set-in-env>=<set-in-env>
+STRIPE_SECRET_KEY=<set-in-env>=<set-in-env>
 NODE_ENV=production
 
 # .env.staging
-VITE_SUPABASE_URL=https://staging.supabase.co
-VITE_SUPABASE_ANON_KEY=<set-in-env>=staging_key
-STRIPE_SECRET_KEY=<set-in-env>=sk_test_xxx
+VITE_SUPABASE_URL=<set-in-env>
+VITE_SUPABASE_ANON_KEY=<set-in-env>=<set-in-env>
+STRIPE_SECRET_KEY=<set-in-env>=<set-in-env>
 NODE_ENV=staging
 ```
 
