@@ -30,14 +30,14 @@
 ### Environment Variables Required
 ```
 # Supabase
-VITE_SUPABASE_URL=<set-in-env>
-VITE_SUPABASE_ANON_KEY=<set-in-env>=<set-in-env>
+VITE_SUPABASE_URL=https://xxx.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJxxx...
 SUPABASE_SERVICE_ROLE_KEY=eyJxxx... (backend only)
 
 # Stripe
 STRIPE_PUBLIC_KEY=pk_xxx
-STRIPE_SECRET_KEY=<set-in-env>=<set-in-env>
-STRIPE_WEBHOOK_SECRET=<set-in-env>=<set-in-env>
+STRIPE_SECRET_KEY=sk_xxx (backend only)
+STRIPE_WEBHOOK_SECRET=whsec_xxx (backend only)
 
 # SMTP
 SMTP_HOST=smtp.simply.com
@@ -47,7 +47,7 @@ SMTP_PASS=xxx
 DEFAULT_FROM_EMAIL=no-reply@losningpro.dk
 
 # AI
-OPENAI_API_KEY=<set-in-env>=<set-in-env>
+OPENAI_API_KEY=sk-xxx (backend only)
 
 # App
 NODE_ENV=production

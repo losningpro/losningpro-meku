@@ -9,7 +9,7 @@
 // Backend webhook endpoint
 app.post('/api/webhooks/stripe', async (req, res) => {
   const sig = req.headers['stripe-signature'];
-  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET=<set-in-env>;
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
   
   let event;
   try {
@@ -327,15 +327,15 @@ CREATE TABLE staging.marketplace (...);
 **Environment Variables**
 ```bash
 # .env.production
-VITE_SUPABASE_URL=<set-in-env>
-VITE_SUPABASE_ANON_KEY=<set-in-env>=<set-in-env>
-STRIPE_SECRET_KEY=<set-in-env>=<set-in-env>
+VITE_SUPABASE_URL=https://prod.supabase.co
+VITE_SUPABASE_ANON_KEY=prod_key
+STRIPE_SECRET_KEY=sk_live_xxx
 NODE_ENV=production
 
 # .env.staging
-VITE_SUPABASE_URL=<set-in-env>
-VITE_SUPABASE_ANON_KEY=<set-in-env>=<set-in-env>
-STRIPE_SECRET_KEY=<set-in-env>=<set-in-env>
+VITE_SUPABASE_URL=https://staging.supabase.co
+VITE_SUPABASE_ANON_KEY=staging_key
+STRIPE_SECRET_KEY=sk_test_xxx
 NODE_ENV=staging
 ```
 
